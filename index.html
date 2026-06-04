@@ -1,66 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moger Baws Memorial Trophy</title>
+    <meta charset="utf-8">
+    <title>World Cup Predictor</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bracketry/dist/bracketry.css">
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            margin: 20px;
         }
 
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        h1 {
-            color: #2da44e;
-        }
-
-        p {
-            color: #555;
-        }
-
-        button {
-            background: #0969da;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            opacity: 0.9;
+        #bracket {
+            width: 100%;
+            height: 800px;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Mogers Baws Memorial Trophy</h1>
-        <p>Please click below!</p>
 
-        <button onclick="showMessage()">Click Me</button>
+<h1>🏆 World Cup Predictor</h1>
 
-        <p id="message"></p>
-    </div>
+<div id="bracket"></div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").textContent =
-                "Jacob Green loves beans!";
-        }
+<script src="https://cdn.jsdelivr.net/npm/bracketry/dist/bracketry.js"></script>
+<script src="data.js"></script>
+
+</body>
+</html>
+
     </script>
 </body>
 </html>
