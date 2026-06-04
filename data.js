@@ -1,4 +1,4 @@
-
+const data{
 {"name": "World Cup 2026",
  "matches": 
   [{"round": "Matchday 1",
