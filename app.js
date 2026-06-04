@@ -2,8 +2,12 @@ import { createBracket } from "https://cdn.jsdelivr.net/npm/bracketry/+esm";
 
 const data = {
   rounds: [
-    { name: "Final" }
-  ],
+  { name: "Round of 32" },
+  { name: "Round of 16" },
+  { name: "Quarter-finals" },
+  { name: "Semi-finals" },
+  { name: "Final" }
+]
 
   matches: [
     {
