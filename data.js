@@ -1,37 +1,35 @@
 const data = {
   rounds: [
+    { name: "Final" }
+  ],
+
+  matches: [
     {
-      name: "Quarterfinals",
-      matches: [
-        {
-          sides: [
-            { team: { name: "England" } },
-            { team: { name: "USA" } }
-          ]
-        },
-        {
-          sides: [
-            { team: { name: "Brazil" } },
-            { team: { name: "Japan" } }
-          ]
-        }
-      ]
-    },
-    {
-      name: "Semifinal",
-      matches: [
-        {
-          sides: [
-            { team: { name: "Winner QF1" } },
-            { team: { name: "Winner QF2" } }
-          ]
-        }
+      roundIndex: 0,
+      order: 0,
+      sides: [
+        { contestantId: "eng" },
+        { contestantId: "bra" }
       ]
     }
-  ]
+  ],
+
+  contestants: {
+    eng: {
+      players: [
+        { title: "England" }
+      ]
+    },
+
+    bra: {
+      players: [
+        { title: "Brazil" }
+      ]
+    }
+  }
 };
 
-bracketry.createBracket(
+createBracket(
   data,
   document.getElementById("bracket")
 );
