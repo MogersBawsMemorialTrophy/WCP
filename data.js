@@ -726,4 +726,9 @@ const data{
     "time": "15:00 UTC-4",
     "team1": "W101",
     "team2": "W102",
-    "ground": "New York/New Jersey (East Rutherford)"}]}
+    "ground": "New York/New Jersey (East Rutherford)"}]};
+ 
+bracketry.createBracket(
+  data,
+  document.getElementById("bracket")
+ );
